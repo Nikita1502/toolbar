@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="9.0" ExtensionBundleId="com.myFirstExtension" ExtensionBundleVersion="3.0.0"
+    ExtensionBundleName="My First Extension">
+    <ExtensionList>
+        <Extension Id="com.myFirstExtension" Version="3.0.0" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="PHXS" Version="[20.0,22.9]" />
+            <Host Name="ILST" Version="[23.0,25.9]" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="9.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        
+        <Extension Id="com.myFirstExtension">
+            <DispatchInfo >
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <CEFCommandLine>
+                        <Parameter>disable-application-cache</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                </Lifecycle>
+                <UI>
+                    <Type>Modeless</Type>
+                    <Menu>MyFirstExtension</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>545</Height>
+                            <Width>700</Width>
+                        </Size>
+                    </Geometry>
+                    <Icons>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>
